@@ -1,0 +1,18 @@
+#Denegar el acceso a un directorio
+#Allow from None
+#Order allow,deny
+
+#Denegar el acceso a un directorio
+#deny from all
+
+#Bloquear acceso desde determinadas IP
+#Order deny, allow
+#Allow from All
+#Deny from XXX.XXX.XXX.XXX
+#Deny from XXX.XXX.XXX.XXX
+
+#evitar listado de directorios
+#IndexIgnore *
+
+#evitar listado de directorios cargando la página principal.
+Options -Indexes
