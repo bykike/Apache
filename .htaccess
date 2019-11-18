@@ -45,3 +45,15 @@ ErrorDocument 403 "Sorry can't allow you access today"
 
 #Cambiar página de inicio por defecto.
 DirectoryIndex pagina1.html pagina2.htm pagina3.html pagina4.php
+
+#Denegar acceso a archivos con determinada extensión
+Order allow,deny
+<Files ~ "\.png$">
+   allow from all
+</Files>
+
+#Denegar acceso a archivos con 2 o más determinadas extensiones
+Order allow,deny
+<Files ~ "\.(png|jpg)$">
+   allow from all
+</Files>
